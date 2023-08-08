@@ -33,6 +33,7 @@ header h1{
     line-height: normal;
 }
 
+
 .c-hero__img {
     width: 100%;
     margin-bottom: 2em;
@@ -68,6 +69,7 @@ header h1{
 .total{
     grid-area: total;
 }
+
 .c-info__tooltip{
     max-width: 150px;
     display: grid;
@@ -119,7 +121,7 @@ header h1{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    
+    margin-top: 2em;
 }
 
 .c-ingredients__subtitle{
@@ -209,13 +211,17 @@ input{
     line-height: normal;
 }
 
-a{
+.c-link {
+    margin-top: 2em;
+}
+
+.c-link a{
     color: var(--gray-4, #BDBDBD);
     font-family: Montserrat;
     font-size: 12px;
     font-style: italic;
     font-weight: 400;
-    line-height: 150%; 
+    line-height: 150%;  
 }
 
 footer{
@@ -230,4 +236,34 @@ footer{
     font-weight: 500;
     line-height: normal;
     
+}
+
+@media only screen and (min-width:900px) {
+    .c-columns{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+
+    .c-column__2{
+        order: -1;
+    }
+
+    .c-column__1{
+        justify-self: center;
+        align-self: start;
+        border-radius: 12px;
+        background: #FFF;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+        padding: 2em;
+    }
+
+    .c-info__tooltips{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .c-ingredients__title{
+        margin-top: 0;
+    }
 }
