@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 1em;
+}
+
+header h1{
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: .5em;
+}
+
+.c-header__text{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+
+.c-header__text p {
+    color: var(--gray-2, #4F4F4F);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.c-hero__img {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.c-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.c-info__tooltips{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1em;
+    grid-template-areas: 
+    "yield . ."
+    "prep cook total";
+}
+
+.yield{
+    grid-area: yield;
+}
+
+.prep{
+    grid-area: prep;
+}
+
+.cook{
+    grid-area: cook;
+}
+
+.total{
+    grid-area: total;
+}
+.c-info__tooltip{
+    max-width: 150px;
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    grid-template-rows: repeat(2,auto);
+    align-items: center;
+    column-gap: .5em;
+    
+    grid-template-areas: 
+    "img title"
+    "img text";
+}
+
+.material-symbols-outlined{
+    grid-area: img;
+    width: 17PX;
+}
+
+
+.c-tooltip__title{
+    grid-area: title;
+    color: var(--gray-4, #BDBDBD);
+    font-family: Montserrat;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.c-tooltip__text{
+    grid-area: text;
+    color: var(--gray-1, #333);
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.yellow{
+    color: #F2994A;
+}
+
+.c-ingredients__title{
+    color: var(--gray-1, #333);
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+
+.c-ingredients__subtitle{
+    color: var(--gray-1, #333);
+    font-family: Playfair Display;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin:1em 0 1em 0;
+}
+
+.c-ingredients__list{
+    display: flex;
+    align-items: flex-start;
+    gap: .5em;
+}
+
+.c-ingredients__list p{
+    color: var(--gray-1, #333);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+}
+
+
+.c-list__text span{
+    color: var(--gray-1, #333);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+input{
+    min-width: 21px;
+    min-height: 21px;
+}
+.c-intructions{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.c-intructions__title{
+    color: var(--gray-1, #333);
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 1em 0 1em 0;
+}
+
+.c-intructions__steps{
+    display: flex;
+    gap: 1em;
+}
+
+.c-steps__number{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: var(--orange, #F2994A);
+    display: flex;
+    justify-content: center;
+}
+
+.c-steps__number span{
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.c-steps__text{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a{
+    color: var(--gray-4, #BDBDBD);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+footer{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    
+}
