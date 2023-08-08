@@ -222,5 +222,12 @@ footer{
     margin-top: 2em;
     display: flex;
     justify-content: center;
+    color: #828282;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
     
 }
